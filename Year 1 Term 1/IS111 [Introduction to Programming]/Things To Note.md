@@ -17,7 +17,7 @@ x.extend(y) # ['a','b','c','d','e','f']
 x += y # ['a','b','c','d','e','f']
 x = x + y # ['a','b','c','d','e','f']
 ```
-### List comprehension 
+### List Referencing
 ```python
 a = []
 b = [a for i in range(5)]
@@ -28,6 +28,16 @@ b[0] += [1,2] # or using b[0].extend([1,2])
 # Take note that when using 
 # b[0].append([1,2])
 # it will yield [[[1,2]],[[1,2]],[[1,2]],[[1,2]],[[1,2]]]
+
+```
+This happens because for the above code, reference to var a is created 5 times in the list comprehension. As such every list within list b is a reference to var a which gets updated upon append or +=.
+In order to prevent it, avoid using global variables to create lists of lists inside comprehension, instead do this.
+
+```python
+
+b = [[] for i in range(5)]
+b[0] += [1,2]
+# b will print [[1,2],[],[],[],[]]
 
 ```
 ### List Infinite Recursion

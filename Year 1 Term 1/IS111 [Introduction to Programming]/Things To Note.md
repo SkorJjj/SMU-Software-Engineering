@@ -8,7 +8,7 @@ lst += [5]  - > List id() remains the same
 list = list + [5]   -> List is copied and a new id() is created
 ```
 
-### list.extend vs list.append vs list += vs list = list +
+### List.extend VS List.append VS List += VS List = List +
 ```python
 x = ['a','b','c']
 y = ['d','e','f']
@@ -33,15 +33,12 @@ b[0] += [1,2] # or using b[0].extend([1,2])
 ### List Infinite Recursion
 ```python
 c = [1, 2, 3]
-#c
-#[1, 2, 3]
+#c = [1, 2, 3]
 c += c
-# c
-#[1, 2, 3, 1, 2, 3]
+# c = [1, 2, 3, 1, 2, 3]
 c = [1, 2, 3]
 c.append(c)
-# c
-#[1, 2, 3, [...]]
+# c = [1, 2, 3, [...]]
 ```
 
 The += operation adds the array elements to the original list. The list.append operation inserts the list (or any object) into the end of the original list, which results in a reference to self in that spot (hence the "..." infinite recursion).

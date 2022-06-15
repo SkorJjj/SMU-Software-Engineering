@@ -30,7 +30,7 @@ b[0] += [1,2] # or using b[0].extend([1,2])
 # it will yield [[[1,2]],[[1,2]],[[1,2]],[[1,2]],[[1,2]]]
 
 ```
-
+## List Infinite Recursion
 ```python
 c = [1, 2, 3]
 #c
@@ -47,7 +47,6 @@ c.append(c)
 The += operation adds the array elements to the original list. The list.append operation inserts the list (or any object) into the end of the original list, which results in a reference to self in that spot (hence the "..." infinite recursion).
  
  
- #Useful Tricks
 ## To Get list of all items except current index
 ```python
 mylist = [0, 1, 2, 3, 4, 5]

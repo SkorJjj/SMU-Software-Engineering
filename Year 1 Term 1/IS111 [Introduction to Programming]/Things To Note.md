@@ -31,6 +31,22 @@ b[0] += [1,2] # or using b[0].extend([1,2])
 
 ```
 This happens because for the above code, reference to var a is created 5 times in the list comprehension. As such every list within list b is a reference to var a which gets updated upon append or +=.
+``` python 
+a = []
+b = [a for i in range(5)]
+b[0] += ([1,2])
+for i in range(len(b)):
+    print(id(b[i]))
+'''
+This is the output
+
+1832473327424
+1832473327424
+1832473327424
+1832473327424
+1832473327424
+'''
+```
 In order to prevent it, avoid using global variables to create lists of lists inside comprehension, instead do this.
 
 ```python

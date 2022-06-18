@@ -84,9 +84,47 @@ mylist = [0, 1, 2, 3, 4, 5]
 x = 3
 newlist = [a for i,a in enumerate(mylist) if a!=x]
 ```
- 
- 
- 
+
+
+### For list splitting, specified end index can be out of range
+```python
+mylist = [0, 1, 2, 3, 4, 5]
+print(mylist[2:10])
+
+# [2, 3, 4, 5]
+```
+
+
+### Shadow Variables 
+```python
+
+a = 3 
+def fn():
+  a = 5 
+  print(a) # prints 5
+fn()
+print(a) # prints 3
+
+```
+- local variables inside function will take precedence over those (of the same name) in global namespace
+
+- if identifier is mot found in the local namespace, it will look in global namespace
+
+- however if an assignment is done anywhere within function, any call to that variable (before the assignment) will result in unboundlocal exception even if the variable exists in the global namespace
+
+
+
+
+### Joining List items in a string.
+
+```python
+x = ['a','b','c']
+y = " " #take not of the space
+z = y.join(x)
+print(z)
+#a b c
+
+```
  
 # Short circuit evaluation 
 | Operation   | Notes |
@@ -98,6 +136,7 @@ newlist = [a for i,a in enumerate(mylist) if a!=x]
 
 
 # Others
-## To get max value from a dictionary
+### To get max value from a dictionary
 `` max(dict, key=dict.get()) ``
+
 

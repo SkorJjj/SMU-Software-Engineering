@@ -132,6 +132,37 @@ print(z)
 | `if A or B`  | B is evaluated only if A if false. If A is true, the if condition is satisfied and B is not evaluated  |
 | `if A and B`  | B is evaluated only if A is true, If A is false, B is not evaluated  |
 
+# Demorgan's Theorem
+
+``not(A or B) = not(A) and not(B)``  
+
+``not(A and B) = not(A) or not(B)``
+
+## Examples
+```python 
+x >= 22 or y < 3
+''' is Equivalent to '''
+
+```
+
+```python 
+ch1 == ch2 and num %2 != 0
+''' is Equivalent to '''
+
+```
+
+```python 
+not(a) or is_odd(y)
+''' is Equivalent to '''
+
+```
+
+```python 
+x < 1 and isHappy(y) or a %2 == 0
+''' is Equivalent to '''
+
+```
+
 
 
 

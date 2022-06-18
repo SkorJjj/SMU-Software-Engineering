@@ -34,6 +34,8 @@ string[a:b:c] # a = start (inclusive), b = end (exclusive), c = step
 
 .split(separator) # Breaks up the string at the specified separator and returns a list of strings. If separator is not specified, it splits at spaces
 
+.join(iterable) # method takes all items in an iterable and joins them into one string. The string before '.' is inserted between the iterables. 
+
 .istitle() # returns True if all string is a titlecase string such as s = 'Python Is Good'; False otherwise
 
 .isspace() # returns True if all char in string are spaces or tabs & at least one char; False otherwise

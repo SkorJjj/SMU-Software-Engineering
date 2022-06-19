@@ -170,4 +170,14 @@ x < 1 and isHappy(y) or a %2 == 0
 ### To get max value from a dictionary
 `` max(dict, key=dict.get()) ``
 
+### Exit a for loop using break
+```python
+for nums in arr:
+    for i in nums:
+        if i <255:
+            break
+            .....
+            
+```
+
 

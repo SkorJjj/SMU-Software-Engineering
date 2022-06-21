@@ -95,7 +95,7 @@ print(mylist[2:10])
 ```
 
 
-### Shadow Variables 
+### Shadow Variables and variable scoping
 ```python
 
 a = 3 
@@ -111,6 +111,62 @@ print(a) # prints 3
 - if identifier is mot found in the local namespace, it will look in global namespace
 
 - however if an assignment is done anywhere within function, any call to that variable (before the assignment) will result in unboundlocal exception even if the variable exists in the global namespace
+
+```python
+def a(f):
+    n = [2]
+    for i in f:
+        if i not in n:
+            n.append(i)
+    f = n
+f = [1,4]    
+print(f)
+a(f)
+print(f)
+
+''' Output '''
+# [1,4]
+# [1,4]
+```
+This happens because the local parameter 'f' is assigned the to var 'n' and not the original input var. Below are some alternative apporaches.
+
+```python
+
+def a(f):
+    n = [2]
+    for i in f:
+        if i not in n:
+            n.append(i)
+    return n
+f = [1,4]    
+print(b)
+f = a(f)
+print(f)
+
+''' Output '''
+# [1,4]
+# [2,1,4]
+```
+
+
+```python
+
+def a(f):
+    n = [2]
+    for i in f:
+        if i not in n:
+            n.append(i)
+    f.clear
+    f.extend(n)
+f = [1,4]    
+print(b)
+f = a(f)
+print(f)
+
+''' Output '''
+# [1,4]
+# [2,1,4]
+```
 
 
 
@@ -179,60 +235,5 @@ for nums in arr:
             .....
             
 ```
-### Shadow Variable
-```python
-def a(f):
-    n = [2]
-    for i in f:
-        if i not in n:
-            n.append(i)
-    f = n
-f = [1,4]    
-print(f)
-a(f)
-print(f)
 
-''' Output '''
-# [1,4]
-# [1,4]
-```
-This happens because the local parameter 'f' is assigned the to var 'n' and not the original input var. Below are some alternative apporaches.
-
-```python
-
-def a(f):
-    n = [2]
-    for i in f:
-        if i not in n:
-            n.append(i)
-    return n
-f = [1,4]    
-print(b)
-f = a(f)
-print(f)
-
-''' Output '''
-# [1,4]
-# [2,1,4]
-```
-
-
-```python
-
-def a(f):
-    n = [2]
-    for i in f:
-        if i not in n:
-            n.append(i)
-    f.clear
-    f.extend(n)
-f = [1,4]    
-print(b)
-f = a(f)
-print(f)
-
-''' Output '''
-# [1,4]
-# [2,1,4]
-```
 

@@ -168,7 +168,7 @@ print(f)
 # [2,1,4]
 ```
 
-
+Or just be verbose with your variable names to avoid name conflict. 
 
 
 ### Joining List items in a string.

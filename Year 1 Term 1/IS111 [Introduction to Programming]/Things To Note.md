@@ -235,5 +235,34 @@ for nums in arr:
             .....
             
 ```
+### Continue in a for loop
+```python
+for i in range(10):
+    if i % 2 == 0:
+        continue
+        print(i)
+    elif i % 3 == 0:
+        i += 10
+    elif i % 6 == 0:
+        break       
+    print(i)
+```
 
+The continue statement continues to the next iteration in the for loop. The code below it is not executed at all. 
 
+### Take note of execution of elif and if statements in for loop
+
+```python
+s = 0
+for i in range(10):
+    if i % 2 == 0:
+        i = i+1
+     if i % 3 == 0:
+        i = i-1
+     else:
+        i = 0
+     s+=1
+print(s)
+        
+```
+Take note that both if statements will be executed unlike an if - elif block

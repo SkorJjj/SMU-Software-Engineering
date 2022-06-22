@@ -128,7 +128,7 @@ print(f)
 # [1,4]
 # [1,4]
 ```
-This happens because the local parameter 'f' is assigned the to var 'n' and not the original input var. Below are some alternative apporaches.
+This happens because the local var 'f' is assigned the to var 'n' and not the original input var. Below are some alternative apporaches.
 
 ```python
 

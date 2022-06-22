@@ -266,3 +266,55 @@ print(s)
         
 ```
 Take note that both if statements will be executed unlike an if - elif block
+
+
+### .pop vs .remove
+Take this function for example that removes odd numbers from a list
+```python
+def remove_odd(x):
+    for i in x:
+        if i%2 == 0:
+            x.pop(i)
+    return x
+print(remove_odd([1,5,10,3,2,2]))
+#[1, 10, 2, 2]
+```
+This prints the wrong answer as .pop() method expects an index. However, in the above code, the value is provided.
+As such, using .remove method can solve the problem as it expects a value instead of the index.
+
+```python
+def remove_odd(x):
+    for i in x:
+        if i%2 == 0:
+            x.remove(i) # or x.pop(x.index(i))
+    return x
+print(remove_odd([1,5,10,3,2,2]))
+#[5, 10, 2, 2]
+```
+However, this still does not print the correct result.
+
+This happens because the list is being modified on the spot. Which can cause weird behaviours.
+
+|Iteration|Index|List|
+| ------------- | ------------- |------------- |
+|0|0|[5,10,3,2,2]|
+|1|1|[5,10,3,2,2]|
+|2|2|[5,10,3,2,2]|
+|3|3|[5,10,2,2]|
+|4|4|[5,10,2,2]|
+
+As seen from the above example, once the element is removed, the list shape changes and the value that was previously was at index 0 was changed. However, the iteration moved on to the next index which caused the value 5 to remain inside the final list. 
+
+In order to prevent this, we can use .copy() method to create a shallow copy of the list. That way the original list is not modified.
+
+```python
+def remove_odd(x):
+    for i in x.copy():
+        if i%2 == 0:
+            x.remove(i) # or x.pop(x.index(i))
+    return x
+print(remove_odd([1,5,10,3,2,2]))
+#[10, 2, 2]
+```
+There is a caveat. If the original list was a list of list. Using copy method will still modify the original list as it is a shallow copy.
+

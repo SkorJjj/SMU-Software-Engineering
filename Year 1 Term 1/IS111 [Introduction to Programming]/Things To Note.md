@@ -1,5 +1,23 @@
 
-# Concepts to note:
+# Table of Contents
+[Concepts to note:](#concepts-to-note)
+  - [Lists](#lists)
+    - [List.extend VS List.append VS List += VS List = List +](#listextend-vs-listappend-vs-list--vs-list--list-)
+    - [List Referencing](#list-referencing)
+    - [List Infinite Recursion](#list-infinite-recursion)
+    - [To Get list of all items except current index](#to-get-list-of-all-items-except-current-index)
+    - [For list splitting, specified end index can be out of range](#for-list-splitting-specified-end-index-can-be-out-of-range)
+    - [Shadow Variables and variable scoping](#shadow-variables-and-variable-scoping)
+    - [Joining List items in a string.](#joining-list-items-in-a-string)
+- [Short circuit evaluation](#short-circuit-evaluation)
+- [Demorgan's Theorem](#demorgans-theorem)
+  - [Examples](#examples)
+- [Others](#others)
+    - [To get max value from a dictionary](#to-get-max-value-from-a-dictionary)
+    - [Exit a for loop using break](#exit-a-for-loop-using-break)
+    - [Continue in a for loop](#continue-in-a-for-loop)
+    - [Take note of execution of elif and if statements in for loop](#take-note-of-execution-of-elif-and-if-statements-in-for-loop)
+    - [.pop vs .remove](#pop-vs-remove)
 
 
 ## Lists

@@ -213,27 +213,28 @@ print(z)
 ``not(A and B) = not(A) or not(B)``
 
 ## Examples
+### Simplify the negation of the following
 ```python 
 x >= 22 or y < 3
-''' is Equivalent to '''
+''' Negation '''
 
 ```
 
 ```python 
 ch1 == ch2 and num %2 != 0
-''' is Equivalent to '''
+''' Negation '''
 
 ```
 
 ```python 
 not(a) or is_odd(y)
-''' is Equivalent to '''
+''' Negation '''
 
 ```
 
 ```python 
 x < 1 and isHappy(y) or a %2 == 0
-''' is Equivalent to '''
+''' Negation '''
 
 ```
 

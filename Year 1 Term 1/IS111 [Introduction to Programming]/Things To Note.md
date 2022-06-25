@@ -337,3 +337,7 @@ print(remove_odd([1,5,10,3,2,2]))
 ```
 There is a caveat. If the original list was a list of list. Using copy method will still modify the original list as it is a shallow copy.
 
+### range() params
+range(start,stop,step)
+start is inclusive
+stop is **exclusive**

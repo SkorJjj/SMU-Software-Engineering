@@ -1,3 +1,10 @@
+
+# Table of Contents
+- [Entity Relationship Model](#entity-relationship-model)
+  - [Entity Relationship Notation](#entity-relationship-notation)
+    - [Entity Types](#entity-types)
+    - [Attributes Notation](#attributes-notation)
+
 # Entity Relationship Model
 ## Entity Relationship Notation
 ### Entity Types

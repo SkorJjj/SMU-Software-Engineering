@@ -1,9 +1,15 @@
 
 # Table of Contents
+- [Table of Contents](#table-of-contents)
 - [Entity Relationship Model](#entity-relationship-model)
   - [Entity Relationship Notation](#entity-relationship-notation)
     - [Entity Types](#entity-types)
     - [Attributes Notation](#attributes-notation)
+    - [Identifiers](#identifiers)
+      - [Characteristics of Identifiers](#characteristics-of-identifiers)
+    - [Relationship Notations](#relationship-notations)
+      - [Relationship Degrees](#relationship-degrees)
+      - [Relationship Cardinality [```Crow Foot Notation```]](#relationship-cardinality-crow-foot-notation)
 
 # Entity Relationship Model
 ## Entity Relationship Notation
@@ -22,3 +28,29 @@
 | Composite |  ![image](https://user-images.githubusercontent.com/64523806/176382799-450eb604-5777-4044-ab2d-f5fe0be04641.png)| A composite attribute is an attribute that has been broken into different components. Use parentheses (“””) to store composite attributes. The different values inside a composite attribute is known as component attributes. For component attributes, use (). |
 | Multivalued |   NIL |   Denoted via {}. Implies multiple values associated with an attribute. |
 | Derived | ```[Years Employed]``` derived from  <br>   ```Date Employed``` |    Denoted via []. Implies attribute that is derived from another column. |
+
+### Identifiers
+|Type| Definiton|
+|--------|------|
+|Simple Identifier|Single Attribute|
+|Composite Identifier| Made up of multiple attributes. Does not have to be a composite attribute|
+#### Characteristics of Identifiers
+1. Will not change in value
+2. Will not be null: every instance must have a value for the identifier
+
+### Relationship Notations
+
+ #### Relationship Degrees
+ 1. Unary 
+ 2. Binary
+ 3. Ternary
+ 
+ #### Relationship Cardinality [```Crow Foot Notation```]
+ |Type| Meaning|
+ |-----|-----|
+ |![image](https://user-images.githubusercontent.com/64523806/176576975-dc6dbbe2-e403-4600-aca4-1219ab4bc5aa.png) |Mandatory One|
+ |![image](https://user-images.githubusercontent.com/64523806/176577013-06e39fe1-9dbb-42a2-a3cf-cea4c1d2bde2.png) |Mandatory Many|
+ |![image](https://user-images.githubusercontent.com/64523806/176577041-7026b55f-0e87-44d4-afeb-b591d9951123.png) |Optional One|
+ |![image](https://user-images.githubusercontent.com/64523806/176577070-cb33f6e8-ba8d-43fe-8d90-34f80e8ba918.png) |Optional Many|
+ 
+

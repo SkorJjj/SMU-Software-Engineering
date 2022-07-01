@@ -10,3 +10,5 @@
 
 4. ```Option D``` is ```False``` because table room can have reference to student.
 
+### Question 2
+

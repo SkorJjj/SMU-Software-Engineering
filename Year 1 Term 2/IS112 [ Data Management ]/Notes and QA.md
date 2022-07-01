@@ -1,6 +1,6 @@
 
 # Table of Contents
-- [Table of Contents](#table-of-contents)
+
 - [Entity Relationship Model](#entity-relationship-model)
   - [Entity Relationship Notation](#entity-relationship-notation)
     - [Entity Types](#entity-types)
@@ -53,4 +53,12 @@
  |![image](https://user-images.githubusercontent.com/64523806/176577041-7026b55f-0e87-44d4-afeb-b591d9951123.png) |Optional One|
  |![image](https://user-images.githubusercontent.com/64523806/176577070-cb33f6e8-ba8d-43fe-8d90-34f80e8ba918.png) |Optional Many|
  
+# SQL Queries Tips and Tricks
 
+### How to remember JOIN statements.
+
+See ``` JOIN ``` as which table/relation's column can be returned ```NULL```.  
+```(INNER) JOIN``` : Returns records that have matching values in both tables. Nothing can be ```NULL```.  
+```LEFT (OUTER) JOIN```: Returns all records from the left table, and the matched records from the right table. Right records can be ```NULL```.  
+```RIGHT (OUTER) JOIN```: Returns all records from the right table, and the matched records from the left table. Left records can be ```NULL```.  
+```FULL (OUTER) JOIN```: Returns all records when there is a match in either left or right table. Anything can be ```NULL```.  

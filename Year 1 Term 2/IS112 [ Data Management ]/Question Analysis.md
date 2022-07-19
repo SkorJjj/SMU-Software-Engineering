@@ -10,5 +10,19 @@
 
 4. ```Option D``` is ```False``` because table room can have reference to student.
 
-### Question 2
+## Tips
 
+1. If the sentence says 
+EG:    
+  a. ```Each Attribute is identified by the Another_Attribute along with
+a Foreign_Key ```    
+  b. ```A Relation is identified by the Another_Relation’s identification number and its own Attribute_ID ```   
+  
+It implies that this relation is a weak entity.   
+
+
+2. Use verbs such as "has" to imply causal relationships. Eg. Chemist "Has" Assigned_Project "Has" Project
+ 
+3. Aim to achieve third normal form.   
+4. Look out for derived attributes. The common ones are ```Age``` from ```Date of Birth```.
+5. Associated relationship is usually identified by the statement ``` The database is interested in keeping track of...```.   

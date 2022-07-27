@@ -5,7 +5,7 @@
 
 > Does a good man fear that food will fail him? It does not fail the blind, it does not fail the lame; will it fail a good man? A good soldier does not lack someone to give him pay, or a workman, or a cobbler; and shall a good man?[5] Does God so neglect His own creatures, His servants, His witnesses, whom alone He uses as examples to the uninstructed, to prove that He both is, and governs the universe well, and does not neglect the affairs of men, and that no evil befalls a good man either in life or in death?[6]—Yes, but what if He does not provide food?—Why, what else but that as a good general He has sounded the recall? I obey, I follow, lauding my commander, and singing hymns of praise about His deeds. 30For I came into the world when it so pleased Him, and I leave it again at His pleasure, and while I live this was my function—to sing hymns of praise unto God, to myself and to others, be it to one or to many. God does not give me much, no abundance. He does not want me to live luxuriously; He did not give much to Heracles, either, though he was His own son, but someone else was king over Argos and Mycenae, while he was subject, and suffered labours and discipline. And Eurystheus, such as he was, was not king over either Argos or Mycenae, for he was not king even over himself; but Heracles was ruler and leader of all the land and sea, purging them of injustice and lawlessness, and introducing justice and righteousness; and all this he did naked and by himself. And when Odysseus was shipwrecked and cast ashore, did his necessity make abject his spirit, or break it? Nay, but how did he advance upon the maidens to ask for food, which is regarded as being the most disgraceful thing for one person to ask of another?
 
-#### Questions to consider
+#### Things to consider
 1. Concern yourself with only whats in your control. 
 2. Should we rely on others or fate for our misfortunes ?
 3. Should people be concerned about conventional morals and norms when their necessities are not being met. 
@@ -17,7 +17,10 @@
 9. Inner well being is to align fate/circumstances and be content with it or find happiness in it. [Unconventional wealth]
 
 ### Fromm, E. (1976) To have or To Be
->
+<details>
+  <summary><mark><b><font color=darkred>Chapter 4</font></b></mark>
+</summary>
+
 >The Acquisitive Society—Basis for the Having Mode
 Our judgments are extremely biased because we live in a society that rests
 on private property, profit, and power as the pillars of its existence. To
@@ -495,3 +498,13 @@ human, must want to have in the existential sense—while the average
 person wants to have in the existential and in the characterological sense.
 (See the earlier discussion of existential and characterological dichotomies
 in Man for Himself.)
+</details>
+
+#### Things to consider
+1. Our interpretations of conventional wealth depends on the socital norms
+2. We define what is important to us, often those with wealth and convenience consider it a necessity akin to infatuation. Link to material wealth.
+3. where they just move on to another once it becomes obsolete or "less than ideal". Seen as status symbol, the affection and fondness is due to ego. -> Wealth as a stimulus .
+4. People seek wealth as a stimulus ?
+5. Hoarding, it extends to people as well, doctors, dentists, lawyers, chefs
+6. Materialistic aims, what is good for my status and not for me alt. how people percieve me instead of my own well being. As such people have 
+7.  Interests in increasing their material possessions. The act of purchasing more things, as already mentioned in the lesson above, didn’t lead to the so-desperately desired happiness. Completely the opposite happened – the ever-fleeting feeling of satisfaction emerged. "After all, there is constantly something new produced. Something new that is making your current things obsolete. The only time we experience joy, in a society praising possessions, is when we acquire more. But since more is constantly produced, we never feel enough. Thus, we want more, to feel more. It’s a never-ending cycle. Therefore, people can never be satisfied and there is never an end to our wishes. But this realization is not commonly recognized by people. We are sold on the idea that having is what truly matters for a happy life. That you need more to be more."

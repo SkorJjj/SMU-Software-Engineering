@@ -18,6 +18,7 @@
     - [Continue in a for loop](#continue-in-a-for-loop)
     - [Take note of execution of elif and if statements in for loop](#take-note-of-execution-of-elif-and-if-statements-in-for-loop)
     - [.pop vs .remove](#pop-vs-remove)
+    - [Division Operator](#Division-Operator)
 
 
 ## Lists
@@ -341,3 +342,9 @@ There is a caveat. If the original list was a list of list. Using copy method wi
 range(start,stop,step)
 start is inclusive
 stop is **exclusive**
+
+### Division Operator
+for division, no matter what the types of the operands are, the result is always represented as a float
+```python 
+print(4/2) # 2.0
+```

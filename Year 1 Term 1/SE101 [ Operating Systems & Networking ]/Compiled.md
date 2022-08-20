@@ -32,13 +32,20 @@
   
 
 ## Von Neumann Architecture
+```mermaid
+flowchart LR
 
-  
+A[Input Device]
+B["CPU (Control Unit, ALU)"]
+C[Output Device]
+D[Main Memory]
 
-  
+A ==> B
+B ==> C
+B <==> D
+```
 
 ## Single System Bus Architecture
-
   
 
   

@@ -2,30 +2,19 @@
   
 # Table of Contents
 - [**Important Architectures**](#important-architectures)
-
-  - [Von Neumann Architecture](#von-neumann-architecture)
-
-  - [Single System Bus Architecture](#single-system-bus-architecture)
-
+  - [Von Neumann Architecture](#von-neumann-architecture)
+  - [Single System Bus Architecture](#single-system-bus-architecture)
 - [**Important Processes**](#important-processes)
-
-  - [Fetch Decode Execute Cycle  [FDE]](#fetch-decode-execute--cycle-fde)
-
+  - [Fetch Decode Execute Cycle  [FDE]](#fetch-decode-execute-cycle-fde)
+    - [An indepth Look at how FDE Cycle Works](#an-indepth-look-at-how-fde-cycle-works)
 - [**Important Definitions**](#important-definitions)
-
 - [**Questions to Consider**](#questions-to-consider)
-
-  - [Fetch Decode Execute Interrupt Cycle](#fetch-decode-execute-interrupt-cycle)
-
-    - [Describe the stages of FDEI Cycle](#describe-the-stages-of-fdei-cycle)
-
-    - [What is an Interrupt](#what-is-an-interrupt)
-
-    - [How are multiple Interrupts delt with](#how-are-multiple-interrupts-delt-with)
-
-  - [Operating System](#operating-system)
-
-    - [Describe the key management tasks of an operating system](#describe-the-key-management-tasks-of-an-operating-system)
+  - [Fetch Decode Execute Interrupt Cycle](#fetch-decode-execute-interrupt-cycle)
+    - [Describe the stages of FDEI Cycle](#describe-the-stages-of-fdei-cycle)
+    - [What is an Interrupt](#what-is-an-interrupt)
+    - [How are multiple Interrupts delt with](#how-are-multiple-interrupts-delt-with)
+  - [Operating System](#operating-system)
+    - [Describe the key management tasks of an operating system](#describe-the-key-management-tasks-of-an-operating-system)
 
 # **Important Architectures**
 

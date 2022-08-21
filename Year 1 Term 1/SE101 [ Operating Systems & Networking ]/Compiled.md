@@ -222,6 +222,6 @@ allocated memory to processes.
 `Security Management` Which creates accounts, password, upgrades to firewall, anti-malware, and
 protects programs and users from accessing the kernel.
 
-`Hardware Management` Which receives and sends 1/0 to devices.
+`Hardware Management` Which receives and sends I/O to devices.
 
 `Process Management` Decided which process to run via scheduling which instructions to run in which order.

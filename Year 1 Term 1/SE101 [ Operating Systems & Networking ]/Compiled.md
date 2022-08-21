@@ -1,6 +1,7 @@
 
   
 # Table of Contents
+- [Table of Contents](#table-of-contents)
 - [**Important Architectures**](#important-architectures)
   - [Von Neumann Architecture](#von-neumann-architecture)
   - [Single System Bus Architecture](#single-system-bus-architecture)
@@ -8,12 +9,13 @@
   - [Fetch Decode Execute Cycle  [FDE]](#fetch-decode-execute-cycle-fde)
     - [An indepth Look at how FDE Cycle Works](#an-indepth-look-at-how-fde-cycle-works)
 - [**Important Definitions**](#important-definitions)
+  - [Operating System](#operating-system)
 - [**Questions to Consider**](#questions-to-consider)
   - [Fetch Decode Execute Interrupt Cycle](#fetch-decode-execute-interrupt-cycle)
     - [Describe the stages of FDEI Cycle](#describe-the-stages-of-fdei-cycle)
     - [What is an Interrupt](#what-is-an-interrupt)
     - [How are multiple Interrupts delt with](#how-are-multiple-interrupts-delt-with)
-  - [Operating System](#operating-system)
+  - [Operating System](#operating-system-1)
     - [Describe the key management tasks of an operating system](#describe-the-key-management-tasks-of-an-operating-system)
 
 # **Important Architectures**
@@ -69,37 +71,74 @@ Main memory
 |   	8|   	|
 
 PC is first set to 1.  
+| PC	|  1 	|
+|-----	|---	|
 
 That address is then stored in MAR; MAR is set to 1.  
+| MAR 	|   1	|
+|-----	|---	|
 
 Instruction at addr 1 is then loaded to MDR; MDR is set to "LOAD 5".  
+| MDR	|   LOAD 5	|
+|-----	|---	|
 
 The instruction is then copied over to CIR; CIR is set to "LOAD 5". 
+| CIR 	|  LOAD 5  	|
+|-----	|---	|
 
 PC is then incremented to the location of the next instruction; PC is set to 2.
+| PC	| 2  	|
+|-----	|---	|
 
 Instruction at CIR is copied over to CU to begin execution. CU is set to "LOAD 5".
+| CU 	|   LOAD 5	|
+|-----	|---	|
 
 LOAD S is then executed by the CU. MAR is set to 5 (5 is loaded on to memory).
 
+| MAR 	|   5	|
+|-----	|---	|
+
 The data is then copied over to MDR; MDR is set to 5.
+| MDR 	|   5	|
+|-----	|---	|
 
 The data is then loaded into the ACC; ACC is set to 5.
+| ACC 	|  5 	|
+|-----	|---	|
 
-LOAD 5 Instruction is now complete. Next instruction is then executed; MDR and MAR are set to 2
+LOAD 5 Instruction is now complete. Next instruction is then executed; MAR and MDR are set to 2
 and ADD 6 respectively to reflect what is on the PC.
+| MAR 	|   2	|
+|-----	|---	|
+
+
+| MDR 	|  ADD 6 	|
+|-----	|---	|
 
 CIR is then set to "ADD 6".
+| CIR 	|  ADD 6 	|
+|-----	|---	|
 
 PC is incremented to next instruction. PC is set to 3.
+| PC 	|   3	|
+|-----	|---	|
 
 CIR is copied to CU; CU is set to ADD 6.
+| CU	|   ADD 6	|
+|-----	|---	|
 
 MAR is set to access memory address at location 6.
+| MAR 	|  6 	|
+|-----	|---	|
 
 MDR is set to 3 (reflected at mem addr 6).
+| MDR 	|   3	|
+|-----	|---	|
 
 Since it's an ADD instruction, MDR and AC are passed onto the ALU where the result, 8 is stored.
+| ALU	|   8	|
+|-----	|---	|
 
 The cycle repeats until everything is done.
   
@@ -109,7 +148,9 @@ The cycle repeats until everything is done.
 # **Important Definitions**
 
   
-
+## Operating System
+A computer program, implemented in either software or firmware, which acts as an intermediary between users of a computer and the computer hardware.
+The purpose of an operating system is to provide an environment in which a user can execute applications
   
 
 # **Questions to Consider**

@@ -37,9 +37,18 @@ B <==> D
 ```
 
 ## Single System Bus Architecture
-  
-
-  
+  ```mermaid
+flowchart 
+A[CPU]
+B[Main Memory]
+E[System Bus ]
+C[IO Module]
+D[IO Module]
+A <--> E
+B <--> E
+E <--> C
+E <--> D
+  ```
 
 # **Important Processes**
 
@@ -147,10 +156,21 @@ The cycle repeats until everything is done.
 
 # **Important Definitions**
 
-  
+## Registers
+
+
+## Interrupts
+An interrupt is a signal sent from a device or a software to the operating system. It causes the OS to
+temporarily stop what it is doing and service the interrupt using its interrupt handler.
+
+
 ## Operating System
 A computer program, implemented in either software or firmware, which acts as an intermediary between users of a computer and the computer hardware.
 The purpose of an operating system is to provide an environment in which a user can execute applications
+
+## Process
+
+## Schedule
   
 
 # **Questions to Consider**
@@ -188,19 +208,9 @@ state of the remaining CPU registers of the interrupted program. Restores the st
 CPU registers and then restores the PC and PWS registers this resuming the execution of the
 interrupted program.
 
-
-
-### What is an Interrupt
-An interrupt is a signal sent from a device or a software to the operating system. It causes the OS to
-temporarily stop what it is doing and service the interrupt using its interrupt handler.
-
-  
-
   
 
 ### How are multiple Interrupts delt with
-
-  
 
   
 

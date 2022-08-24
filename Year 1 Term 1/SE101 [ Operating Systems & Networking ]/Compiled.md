@@ -197,10 +197,14 @@ ensure all the operands are loaded into the CPU's registers.
 The CPU then executes the instruction and saves the result by updating the CPU's registers or
 performing data transfer tasks as needed.
 
-While CPU is idling and waiting for an instruction to be executed, the program handles the control
-back to CPU which can resume execution of other instructions. CPU then acknowledges the interrupt
+
+While CPU is idling and waiting for an instruction to be executed, the program handles the control back to CPU which can resume execution of other instructions".
+if an instruction is executed by say the ALU, then the CPU cannot resume execution of another instruction that needs the ALU, cos the ALU is busy.
+It can do other tasks that don't involve the ALU.
+
+When an instruction is done, an interrupt signal is sent. CPU then acknowledges the interrupt
 and stores the Program Counter and Program Status Word registers (of the program that sent the
-interrupt) in memory.
+interrupt) in memory. The user programme gets suspended for a while to allow interrupt handler to handle the interrupt.
 
 CPU then loads an address of the interrupt handler to PC and starts the execute the interrupt
 handler. The interrupted program is now considered suspended. The handler then saves the current
@@ -209,7 +213,16 @@ CPU registers and then restores the PC and PWS registers this resuming the execu
 interrupted program.
 
   
-
+Summarised form.
+1. A user program needs to perform I/O
+2. It sends a request to an I/O program
+3. The I/O program splits its work into two parts. Part 1: it does some work, including sending an I/O command to an I/O module
+4. The I/O module does its own thing, independent of the CPU
+5. The I/O program finishes part 1.
+6. The user program gets to continue running
+7. When the I/O module is done, it sends an interrupt to say "I'm done"
+8. The user program gets suspended for a while, so that an interrupt handler can be run to take care of the interrupt
+9. After the interrupt handler is done, the user program can continue
 ### How are multiple Interrupts delt with
 
   
